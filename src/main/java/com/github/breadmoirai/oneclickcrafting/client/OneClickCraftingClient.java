@@ -90,7 +90,7 @@ public class OneClickCraftingClient implements ClientModInitializer {
             }
             return;
         }
-        if (!itemStack.isItemEqual(lastCraft)) {
+        if (!itemStack.isOf(lastCraft.getItem())) {
             return;
         }
         MinecraftClient client = MinecraftClient.getInstance();
